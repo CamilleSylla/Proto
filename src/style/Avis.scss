@@ -1,0 +1,31 @@
+.avis {
+    width: 94%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .avis_content {
+        width: 90%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        .avis_title {
+            width: 100%;
+            height: 20%;
+            border-bottom: 2px solid #121525;
+        }
+        .avis_items_container {
+            width: 100%;
+            height: 70%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            .avis_item {
+                width: 40%;
+                height: 80%;
+                background-color: #121525;
+            }
+        }
+    }
+}

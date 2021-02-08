@@ -1,0 +1,26 @@
+.PSM {
+    width: 94%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .PSM_container {
+        display: flex;
+        height: 90%;
+        width: 80%;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 50%;
+            position: absolute;
+            left: 0;
+        }
+        .PSM_content {
+            width: 30%;
+            position: absolute;
+            background-color: #121525;
+            height: 50%;
+        }
+    }
+}
