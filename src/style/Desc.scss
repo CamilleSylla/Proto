@@ -1,0 +1,64 @@
+.desc {
+  width: 94%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .desc_container {
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .desc_grid {
+      width: 100%;
+      height: 33%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      * {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .desc_left {
+        height: 100%;
+        width: 30%;
+        border-left: 2px solid #121525;
+      }
+      .desc_right {
+        height: 100%;
+        width: 30%;
+        border-right: 2px solid #121525;
+      }
+      .desc_middle {
+        height: 100%;
+        width: 15%;
+        border-left: 2px solid #121525;
+        border-right: 2px solid #121525;
+        img {
+          width: 70%;
+          animation: circleRotation linear 3s infinite;
+        }
+      }
+      .desc_cont {
+        width: 80%;
+      }
+    }
+    .desc_verticall {
+      border-top: 2px solid #121525;
+      border-bottom: 2px solid #121525;
+    }
+  }
+}
+
+@keyframes circleRotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
