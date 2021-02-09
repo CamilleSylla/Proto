@@ -91,6 +91,9 @@ export default function TestMenu() {
               <a className="nav_link">Nos dossier</a>
             </li>
             <li>
+              <a className="nav_link">Terrain de jeu</a>
+            </li>
+            <li>
               <a className="nav_link">Contactez IconicDev !</a>
             </li>
           </ul>

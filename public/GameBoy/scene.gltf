@@ -1,0 +1,697 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 3280,
+      "max": [
+        42,
+        48,
+        40
+      ],
+      "min": [
+        8,
+        5,
+        22
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 39360,
+      "componentType": 5126,
+      "count": 3280,
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 3280,
+      "max": [
+        0.99609375,
+        0.828125
+      ],
+      "min": [
+        0.00390625,
+        0.0078125
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 4920,
+      "max": [
+        3279
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 78720,
+      "componentType": 5126,
+      "count": 260,
+      "max": [
+        29,
+        22,
+        22
+      ],
+      "min": [
+        2,
+        8,
+        17
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 81840,
+      "componentType": 5126,
+      "count": 260,
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 26240,
+      "componentType": 5126,
+      "count": 260,
+      "max": [
+        0.98828125,
+        0.7578125
+      ],
+      "min": [
+        0.00390625,
+        0.0078125
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 19680,
+      "componentType": 5125,
+      "count": 390,
+      "max": [
+        259
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 84960,
+      "componentType": 5126,
+      "count": 128,
+      "max": [
+        28,
+        22,
+        20
+      ],
+      "min": [
+        3,
+        16,
+        14
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 86496,
+      "componentType": 5126,
+      "count": 128,
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 28320,
+      "componentType": 5126,
+      "count": 128,
+      "max": [
+        0.99609375,
+        0.6875
+      ],
+      "min": [
+        0.00390625,
+        0.1328125
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 21240,
+      "componentType": 5125,
+      "count": 192,
+      "max": [
+        127
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 88032,
+      "componentType": 5126,
+      "count": 128,
+      "max": [
+        27,
+        18,
+        18
+      ],
+      "min": [
+        2,
+        12,
+        12
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 89568,
+      "componentType": 5126,
+      "count": 128,
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 29344,
+      "componentType": 5126,
+      "count": 128,
+      "max": [
+        0.98828125,
+        0.6875
+      ],
+      "min": [
+        0.00390625,
+        0.1328125
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 22008,
+      "componentType": 5125,
+      "count": 192,
+      "max": [
+        127
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Baboyo (https://sketchfab.com/Baboyo)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/falling-game-boy-7dbeed5b1dee411eae1dc759f6c09a7c",
+      "title": "Falling Game boy"
+    },
+    "generator": "Sketchfab-9.6.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 22776,
+      "byteOffset": 0,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 30368,
+      "byteOffset": 22776,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 91104,
+      "byteOffset": 53144,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 144248,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/Businessboy2_material_baseColor.png"
+    },
+    {
+      "uri": "textures/Businessboy2_material_metallicRoughness.png"
+    },
+    {
+      "uri": "textures/Businessboy2_material_emissive.png"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0.74672126662167337,
+        0.74672126662167337,
+        0.74672126662167337
+      ],
+      "emissiveTexture": {
+        "index": 2,
+        "texCoord": 0
+      },
+      "name": "Businessboy2_material",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "baseColorTexture": {
+          "index": 0,
+          "texCoord": 0
+        },
+        "metallicFactor": 1,
+        "metallicRoughnessTexture": {
+          "index": 1,
+          "texCoord": 0
+        },
+        "roughnessFactor": 0.78852574731188718
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Matrix.001_Businessboy2_material_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Matrix_1_Businessboy2_material_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 5,
+            "POSITION": 4,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Matrix_2_Businessboy2_material_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 9,
+            "POSITION": 8,
+            "TEXCOORD_0": 10
+          },
+          "indices": 11,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Matrix_3_Businessboy2_material_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 13,
+            "POSITION": 12,
+            "TEXCOORD_0": 14
+          },
+          "indices": 15,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "RootNode (gltf orientation matrix)",
+      "rotation": [
+        -0.70710678118654746,
+        -0,
+        -0,
+        0.70710678118654757
+      ]
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        0.98763161897659302,
+        -0.14580751955509186,
+        0.057654082775115967,
+        0,
+        0.14964373409748077,
+        0.98632872104644775,
+        -0.069010570645332336,
+        0,
+        -0.046803615987300873,
+        0.076784595847129822,
+        0.99594855308532715,
+        0,
+        -1.3591409921646118,
+        -4.7754321098327637,
+        -10.533168792724609,
+        1
+      ],
+      "name": "RootNode (model correction matrix)"
+    },
+    {
+      "children": [
+        3
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "c70a4d7643c948549c4976c64bfabb6c.fbx"
+    },
+    {
+      "children": [
+        4,
+        7,
+        9,
+        11,
+        13,
+        15
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        5
+      ],
+      "matrix": [
+        -29.08647719990347,
+        -5.5189064575668629,
+        -95.517119101714371,
+        0,
+        56.639309131094492,
+        79.467234285632031,
+        -21.839123978419661,
+        0,
+        77.110087759933748,
+        -60.452463565620441,
+        -19.988346967737169,
+        0,
+        407.62454223632812,
+        590.38623046875,
+        -100.54539489746094,
+        1
+      ],
+      "name": "Light"
+    },
+    {
+      "children": [
+        6
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        2.2204460492503131e-16,
+        1,
+        0,
+        0,
+        -1,
+        2.2204460492503131e-16,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": ""
+    },
+    {
+      "name": ""
+    },
+    {
+      "children": [
+        8
+      ],
+      "matrix": [
+        -65.155832803290963,
+        -44.527135765708579,
+        -61.417030473735487,
+        0,
+        -32.40134137821245,
+        89.539574512336159,
+        -30.542088974418615,
+        0,
+        68.592054721299746,
+        -1.0718647115348782e-05,
+        -72.767633623962695,
+        0,
+        735.88916015625,
+        495.8309326171875,
+        692.5791015625,
+        1
+      ],
+      "name": "Camera"
+    },
+    {
+      "name": ""
+    },
+    {
+      "children": [
+        10
+      ],
+      "matrix": [
+        0.93285046495400226,
+        0.34528793689967613,
+        -0.10279168963190127,
+        0,
+        -0.36026366219475059,
+        0.89407315798504783,
+        -0.26616401310596138,
+        0,
+        6.7601517136274228e-08,
+        0.28532333392989412,
+        0.95843125778839222,
+        0,
+        -25,
+        15.906861305236816,
+        -25,
+        1
+      ],
+      "name": "Matrix.001"
+    },
+    {
+      "mesh": 0,
+      "name": "Matrix.001_Businessboy2_material_0"
+    },
+    {
+      "children": [
+        12
+      ],
+      "matrix": [
+        0.6236247514904818,
+        0.20476164531285213,
+        -0.75443014119082541,
+        0,
+        -0.69463027246731168,
+        0.58784157593123587,
+        -0.41464571163665664,
+        0,
+        0.35858186499099931,
+        0.78263334340893942,
+        0.50882619418041164,
+        0,
+        -9.2503423690795898,
+        -10.690084457397461,
+        -20.609975814819336,
+        1
+      ],
+      "name": "Matrix_1"
+    },
+    {
+      "mesh": 1,
+      "name": "Matrix_1_Businessboy2_material_0"
+    },
+    {
+      "children": [
+        14
+      ],
+      "matrix": [
+        0.44231441825345419,
+        0.68388601011426697,
+        0.58022226825165646,
+        0,
+        -0.41460710643472737,
+        0.72958883058533486,
+        -0.54387587404633075,
+        0,
+        -0.79527283507420599,
+        -1.3489792977106063e-07,
+        0.60625169508465415,
+        0,
+        4.2720198631286621,
+        8.8711490631103516,
+        -31.434503555297852,
+        1
+      ],
+      "name": "Matrix_2"
+    },
+    {
+      "mesh": 2,
+      "name": "Matrix_2_Businessboy2_material_0"
+    },
+    {
+      "children": [
+        16
+      ],
+      "matrix": [
+        0.89959866300792712,
+        0.37161381607162186,
+        0.22940230430193331,
+        0,
+        -0.31841069470846967,
+        0.91762986648395972,
+        -0.23784460816234609,
+        0,
+        -0.29889273052356874,
+        0.14092053602646951,
+        0.94382435810742449,
+        0,
+        -12.958313941955566,
+        28.240043640136719,
+        -28.215269088745117,
+        1
+      ],
+      "name": "Matrix_3"
+    },
+    {
+      "mesh": 3,
+      "name": "Matrix_3_Businessboy2_material_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9728,
+      "minFilter": 9728,
+      "wrapS": 10497,
+      "wrapT": 10497
+    },
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "OSG_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 1,
+      "source": 1
+    },
+    {
+      "sampler": 1,
+      "source": 2
+    }
+  ]
+}
+
