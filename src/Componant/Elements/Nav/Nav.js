@@ -5,23 +5,13 @@ import Git from "../../../assets/Icon/github.svg";
 import FB from "../../../assets/Icon/facebook.svg";
 import Menu from "../../Layers/Menu/Menu";
 
-export default function Nav({active, setActive}) {
+export default function Nav({ShowMenu}) {
 
-  const ShowMenu = () => {
-    setActive(!active);
-  };
 
   return (
     <>
     <div className="nav">
       <div className="hamburger_container">
-        <div className="hamburger" onClick={ShowMenu}>
-          <div className="bars " id="top_bar"></div>
-          <div className="bars " id="middle_bar"></div>
-          <div className="bars " id="bottom_bar"></div>
-          <div className="menuCircle purple"></div>
-          <div className="menuCircle blue"></div>
-        </div>
       </div>
       <div className="social">
         <div className="social_icon">
