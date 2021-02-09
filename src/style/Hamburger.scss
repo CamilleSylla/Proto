@@ -1,21 +1,15 @@
-.nav {
-  position: fixed;
-  width: 6%;
-  height: 100vh;
-  top: 0;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border-left: 2px solid #121525;
-  .hamburger_container {
-    width: 100%;
+.hamburger_container {
+    width: 6%;
     height: 15%;
     background-color: rgba(#121525, 0.3);
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
     .hamburger {
+      background-color: aqua;
       z-index: 6;
       width: 30px;
       height: 30px;
@@ -61,42 +55,3 @@
       }
     }
   }
-
-  .social {
-    width: 100%;
-    height: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    .social_icon {
-      width: 20px;
-      height: 20px;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .icon_circle {
-        width: 100%;
-        height: 100%;
-        background: #f2f2f2;
-        position: absolute;
-        border-radius: 50%;
-        transform: scale(0);
-        transition: all 0.3s ease-out;
-        opacity: 0;
-      }
-      img {
-        width: 100%;
-        z-index: 1;
-      }
-      &:hover {
-        cursor: pointer;
-        .icon_circle {
-          opacity: 1;
-          transform: scale(2);
-        }
-      }
-    }
-  }
-}
