@@ -1,0 +1,13 @@
+.scards_container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+    .scard {
+        width: 20%;
+        height: 25vw;
+        border: 2px solid #a5167e;
+        margin: auto;
+    }
+}

@@ -12,7 +12,7 @@ export default function GameBoy () {
       0.1,
       1000
     );
-    camera.position.set(0,5,12)
+    camera.position.set(0,0,0.75)
     const renderer = new THREE.WebGLRenderer({ alpha: true });
     renderer.setSize(el.clientWidth, el.clientHeight);
     renderer.setClearColor(0x000000, 0);
@@ -33,6 +33,7 @@ export default function GameBoy () {
     Man.load("/GameBoy/scene.gltf", (gltf) => {
       gltf.scene.scale.setScalar(0.15);
       LeMan = gltf.scene;
+      console.log(gltf.scene)
       gltf.scene.traverse((n) => {
         if (n.isMesh) {
           n.castShadow = true;
@@ -57,10 +58,12 @@ export default function GameBoy () {
 scene.add( light );
 
     function upDate(){
-        scene.rotation.y +=0.015
-        // scene.rotation.z +=0.005
+        // scene.rotation.z = 50
+        // scene.rotation.x = -50
+        // scene.rotation.y = 200
+        scene.rotation.y +=0.002
         // spotLight.position.y += 0.05
-        // camera.rotation.y +=0.01
+        // camera.rotation.z += 0.01
         // hemiLight.position.set( mouse.x + 10,mouse.x + 10,mouse.x + 10)
        }
       
