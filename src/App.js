@@ -5,6 +5,7 @@ import Nav from './Componant/Elements/Nav/Nav';
 import TestMenu from './Componant/Layers/TestMenu.js/TestMenu';
 import Services from './Componant/Pages/Home/Services';
 import { Route, Switch, useLocation } from 'react-router-dom';
+import Contact from './Componant/Pages/Contact';
 
 function App() {
   const location = useLocation
@@ -16,6 +17,7 @@ function App() {
         <Switch location={location} key={location.pathname}>
         <Route path="/" exact component={Home} />
         <Route path="/services" exact component={Services} />
+        <Route path="/contact" exact component={Contact} />
       </Switch>
       )} />
     </div>

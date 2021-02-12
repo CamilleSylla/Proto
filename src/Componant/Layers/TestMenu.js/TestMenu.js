@@ -126,7 +126,19 @@ export default function TestMenu() {
               </NavLink>
             </li>
             <li>
-              <a className="nav_link">Contactez IconicDev !</a>
+            <NavLink
+              className="nav_link"
+                to="/contact"
+                activeStyle={{
+                  fontWeight: "bold",
+                  color: "#a5167e",
+                  textDecoration: "none"
+                  
+                }}
+                onClick={ShowMenu}
+              >
+                Consultation !
+              </NavLink>
             </li>
           </ul>
         </div>
