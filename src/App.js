@@ -4,13 +4,20 @@ import Home from './Componant/Pages/Home/Home';
 import Nav from './Componant/Elements/Nav/Nav';
 import TestMenu from './Componant/Layers/TestMenu.js/TestMenu';
 import Services from './Componant/Pages/Home/Services';
+import { Route, Switch, useLocation } from 'react-router-dom';
 
 function App() {
+  const location = useLocation
   return (
     <div className="App">
       <TestMenu/>
       <Nav/>
-      <Services/>
+      <Route render={({ location }) => (  
+        <Switch location={location} key={location.pathname}>
+        <Route path="/" exact component={Home} />
+        <Route path="/services" exact component={Services} />
+      </Switch>
+      )} />
     </div>
   );
 }

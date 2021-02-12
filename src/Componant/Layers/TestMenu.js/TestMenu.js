@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../../../style/TestMenu.scss";
-import Hamburger from "../Hamburger/Hamburger";
 import Logo from "../../../assets/Logos/IDLine.svg";
+import { NavLink } from "react-router-dom";
 
 export default function TestMenu() {
   const [isActive, setIsActive] = useState(false);
@@ -22,14 +22,13 @@ export default function TestMenu() {
     const Hamburger = document.querySelector(".hamburger");
     const Menu = document.querySelector(".menu");
 
-
     function isTrue() {
       Purple.classList.add("active");
       Top.style.transform = "rotate(-45deg)";
       Bottom.style.transform = "rotate(45deg)";
       Middle.style.transform = "translate3d(100%,0,0)";
       Middle.style.opacity = "0";
-    Menu.style.transform = "translate3d(0,0,0)"
+      Menu.style.transform = "translate3d(0,0,0)";
 
       setTimeout(() => {
         MenuLeft.style.transform = "translate3d(0, 0, 0)";
@@ -51,7 +50,7 @@ export default function TestMenu() {
       Blue.style.display = "block";
       Purple.style.display = "block";
       Blue.classList.remove("active");
-      Menu.style.transform = "translate3d(0,-100%,0)"
+      Menu.style.transform = "translate3d(0,-100%,0)";
       Top.style.transform = "rotate(0deg)";
       Middle.style.transform = "translate3d(0,0,0)";
       Middle.style.opacity = "1";
@@ -82,16 +81,49 @@ export default function TestMenu() {
           <img src={Logo} className="menu_logo" />
           <ul>
             <li>
-              <a className="nav_link">Accueil</a>
+            <NavLink
+            className="nav_link"
+                to="/"
+                activeStyle={{
+                  fontWeight: "bold",
+                  color: "#a5167e",
+                  textDecoration: "none"
+                }}
+                onClick={ShowMenu}
+              >
+                Accueil
+              </NavLink>
             </li>
             <li>
-              <a className="nav_link">Service</a>
+            <NavLink
+            className="nav_link"
+                to="/services"
+                activeStyle={{
+                  fontWeight: "bold",
+                  color: "#a5167e",
+                  textDecoration: "none"
+                }}
+                onClick={ShowMenu}
+              >
+                Services
+              </NavLink>
             </li>
             <li>
               <a className="nav_link">Nos dossier</a>
             </li>
             <li>
-              <a className="nav_link">Terrain de jeu</a>
+              <NavLink
+              className="nav_link"
+                to="/lab"
+                activeStyle={{
+                  fontWeight: "bold",
+                  color: "#F2F2F2",
+                  textDecoration: "none"
+                  
+                }}
+              >
+                Le LAB
+              </NavLink>
             </li>
             <li>
               <a className="nav_link">Contactez IconicDev !</a>

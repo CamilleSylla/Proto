@@ -3,9 +3,8 @@ import "../../../style/Nav.scss";
 import Insta from "../../../assets/Icon/insta.svg";
 import Git from "../../../assets/Icon/github.svg";
 import FB from "../../../assets/Icon/facebook.svg";
-import Menu from "../../Layers/Menu/Menu";
 
-export default function Nav({ShowMenu}) {
+export default function Nav() {
 
 
   return (

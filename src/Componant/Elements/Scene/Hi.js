@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import * as THREE from "three";
-import { FBXLoader } from "../../../../node_modules/three/examples/jsm/loaders/FBXLoader.js";
+import { GLTFLoader } from "../../../../node_modules/three/examples/jsm/loaders/GLTFLoader.js";
+import { OrbitControls } from "../../../../node_modules/three/examples/jsm/controls/OrbitControls.js";
 
 export default function GameBoy() {
   useEffect(() => {
@@ -12,7 +13,7 @@ export default function GameBoy() {
       0.1,
       1000
     );
-    camera.position.set(0, 5, 25);
+    camera.position.set(0, 1, 2);
     const renderer = new THREE.WebGLRenderer({ alpha: true });
     renderer.setSize(el.clientWidth, el.clientHeight);
     renderer.setClearColor(0x000000, 0);
@@ -30,67 +31,90 @@ export default function GameBoy() {
     });
     let LeMan;
     let Mixer;
-    
-    const Man = new FBXLoader();
-    Man.load("/Hi/character.fbx", (fbx) => {
-      fbx.scale.setScalar(0.1);
-      fbx.position.x = 0;
-      fbx.rotation.x = 0.5;
-      fbx.traverse((n) => {
+
+    const Man = new GLTFLoader();
+    Man.load("/Hi/scene.gltf", (gltf) => {
+      gltf.scene.scale.setScalar(2);
+      gltf.scene.position.set(0, -3, 0);
+      gltf.scene.rotation.y = -1.5;
+      gltf.scene.traverse((n) => {
         if (n.isMesh) {
           n.castShadow = false;
           n.receiveShadow = true;
           if (n.material.map) n.material.map.anisotropy = 16;
         }
       });
-      const Anim = new FBXLoader();
-      Anim.load("/Hi/dance.fbx", (anim) => {
-        Mixer = new THREE.AnimationMixer(fbx);
-        console.log(anim.animations[0]);
-        Mixer.clipAction(anim.animations[0]).play();
-      });
-      scene.add(fbx);
+      scene.add(gltf.scene);
     });
-
-    const spotLight = new THREE.SpotLight(0xffffff, 2);
+    camera.rotation.x = -0.5;
+    const spotLight = new THREE.SpotLight(0xffffff, 1.5);
     spotLight.castShadow = true;
     spotLight.shadow.bias = -0.0001;
     spotLight.shadow.mapSize.width = 1024 * 4;
     spotLight.shadow.mapSize.height = 1024 * 4;
-    spotLight.position.x = 50;
+    spotLight.position.x = 20;
     spotLight.position.y = 50;
-    spotLight.position.z = 50;
+    spotLight.position.z = 20;
+
     scene.add(spotLight);
 
-    const light = new THREE.AmbientLight(0xa5167e, 0.1); // soft white light
+    const light = new THREE.AmbientLight(0xa5167e, 0.2); // soft white light
     scene.add(light);
 
+    const controls = new OrbitControls(camera, renderer.domElement);
+    controls.target.copy(scene.position);
+    controls.update();
+
     function upDate() {
-      
+      spotLight.target.position.z += 100;
+      // console.log(spotLight.target.position.y);
       // scene.rotation.z = 50
       // scene.rotation.x = -50
       // scene.rotation.y = 200
-      // scene.rotation.y +=0.002
       // spotLight.position.y += 0.05
       // camera.rotation.z += 0.01
       // hemiLight.position.set( mouse.x + 10,mouse.x + 10,mouse.x + 10)
     }
 
     function render() {
-        
       renderer.render(scene, camera);
     }
 
     function Loop() {
       //run all the stuf (update, render, repeat)
-      
+
       //  camera.rotation.z = mouse.y
       requestAnimationFrame(Loop);
       upDate();
       render();
     }
     Loop();
+
+    const Labels = document.querySelector('.Hi')
+
+    Labels.addEventListener('mouseenter', e => {
+      document.getElementById("cliqueIci").style.opacity = "0";
+      setTimeout(() => {
+        document.getElementById("cliqueIci").style.display = "none";
+      }, 300);
+    })
+    Labels.addEventListener('mouseleave', e => {
+      document.getElementById("cliqueIci").style.display = "block";
+      setTimeout(() => {
+        document.getElementById("cliqueIci").style.opacity = "1";
+      }, 150);
+    })
   });
 
-  return <div className="Hi"></div>;
+  
+  return (
+    <div className="Hi" >
+      <p id="cliqueIci">
+        Clique Gauche : modifier l'orientation <br/>
+        Clique Gauche : modifier la position <br/>
+        Molette : modifier le zoom <br/>
+        
+        </p>
+    </div>
+  );
 }
