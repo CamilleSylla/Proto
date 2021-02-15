@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     .PSM_container {
         display: flex;
         height: 90%;
@@ -17,7 +18,7 @@
             left: 0;
         }
         .PSM_content {
-            width: 30%;
+            width: 50%;
             position: absolute;
             background-color: #121525;
             height: 50%;

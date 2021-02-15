@@ -1,22 +1,41 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Regle from "../../../assets/Img/regle.webp";
 import Design from "../../../assets/Img/design.webp";
 import Scene from "../../Elements/Scene/Scene";
-import Logo from '../../../assets/Logos/IDLine.svg'
+import Logo from "../../../assets/Logos/IDLine.svg";
+import gsap from "gsap/gsap-core";
+import { ScrollTrigger } from "gsap/all";
 
 export default function HeroBanner() {
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.to(".scene_container", {
+      scrollTrigger: {
+        trigger: ".hero_banner",
+        start: "+=35% +=30% ",
+        scrub: 0.3,
+        // toggleActions: "none restart none reset",
+      },
+      scale: 0,
+      opacity: 0
+    });
+  });
+
   return (
     <section className="hero_banner">
       <article className="intro">
         <div className="overlay">
-            <section className="hero_main_title">
-              <div className="hero_main_container">
-              <img src={Logo} alt="IconicDev"/>
-                <h1 className="page_title">Marquez internet<br/> de votre empreinte</h1>
-              </div>
-              
-            </section>
-            <Scene/>
+          <section className="hero_main_title">
+            <div className="hero_main_container">
+              <img src={Logo} alt="IconicDev" />
+              <h1 className="page_title">
+                Marquez internet
+                <br /> de votre empreinte
+              </h1>
+            </div>
+          </section>
+          <Scene />
         </div>
       </article>
       <div className="hero_cards_container">

@@ -1,9 +1,39 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../../../style/LastProject.scss'
 import Demetis from '../../../assets/Logos/Demetis.svg'
 import OPC from '../../../assets/Logos/OPConsult.svg'
+import { ScrollTrigger } from 'gsap/all'
+import gsap from 'gsap/gsap-core'
 
 export default function LastProject () {
+
+    useEffect(() => {
+
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.from(".Last_project_item", {
+            scrollTrigger: {
+                trigger: ".Last_project",
+          start: "-35%  50%",
+          toggleActions: "restart none none reverse"
+            },
+            opacity: 0,
+            x: 100,
+            stagger: 0.3
+        })
+        gsap.from(".Last_project_name", {
+            scrollTrigger: {
+                trigger: ".Last_project",
+          start: "-35%  50%",
+          toggleActions: "restart none none reverse"
+            },
+            opacity: 0,
+            y: -200,
+            stagger: 0.3,
+            scale: 1.5
+        })
+
+
+    })
 
     return (
         <section className="Last_project">

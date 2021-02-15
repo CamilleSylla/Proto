@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../../style/Contact.scss";
-import Mail from "../Elements/Scene/Mail";
+import Icon from '../../assets/Icon/Marker.svg'
 import ContactForm from "../Layers/ContactForm/ContactFrom";
 import ReactMapGL, {Marker} from "react-map-gl";
 
@@ -34,15 +34,12 @@ export default function Contact() {
           latitude={id.latitude}
           longitude={id.longitude}
           >
-Yo
+            <img src={Icon} style={{width: "50px"}} alt="IconicDev Positition"/>
           </Marker>
         
       </ReactMapGL>
-      {/* <article className="global_infos">
-          <h1>N'hesitez pas à discuter de votre projet</h1>
-          <p>IconicDev vous recontactera pour discuter de votre projet</p>
-        </article>
-        <ContactForm /> */}
+
+        <ContactForm />
     </section>
   );
 }
