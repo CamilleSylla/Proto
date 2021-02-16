@@ -6,7 +6,7 @@ export default function Offers  () {
 
     return (
 <section className="offers">
-        <articles className="offers_content">
+        <article className="offers_content">
             <img src={Icon} alt="Icon"/>
             <h1>Achat de site internet</h1>
             <ul>
@@ -15,8 +15,8 @@ export default function Offers  () {
                 <li>Institutionnel</li>
             </ul>
 
-        </articles>
-        <articles className="offers_content">
+        </article>
+        <article className="offers_content">
             <img src={Icon} alt="Icon"/>
 
             <h1>Location de site internet</h1>
@@ -25,7 +25,7 @@ export default function Offers  () {
                 <li>E-commerce</li>
                 <li>Institutionnel</li>
             </ul>
-        </articles>
+        </article>
 </section>
     )
 }

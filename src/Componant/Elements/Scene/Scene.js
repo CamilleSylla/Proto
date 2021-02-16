@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import * as THREE from "three";
 import { GLTFLoader } from "../../../../node_modules/three/examples/jsm/loaders/GLTFLoader.js";
+import { OrbitControls } from "../../../../node_modules/three/examples/jsm/controls/OrbitControls.js";
 
 export default function Scene() {
   useEffect(() => {
@@ -55,6 +56,10 @@ export default function Scene() {
 
     const light = new THREE.AmbientLight( 0xA5167E, 0.1 ); // soft white light
 scene.add( light );
+
+const controls = new OrbitControls(camera, renderer.domElement);
+    controls.target.copy(scene.position);
+    controls.update();
 
     function upDate(){
         scene.rotation.y +=0.015

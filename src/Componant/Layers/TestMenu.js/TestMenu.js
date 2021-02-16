@@ -5,7 +5,6 @@ import { NavLink } from "react-router-dom";
 
 export default function TestMenu() {
   const [isActive, setIsActive] = useState(false);
-  console.log(isActive);
 
   const ShowMenu = () => {
     setIsActive(!isActive);
@@ -62,7 +61,6 @@ export default function TestMenu() {
       }, 200);
     }
     isActive ? isTrue() : isFalse();
-    console.log(isActive);
   });
 
   return (

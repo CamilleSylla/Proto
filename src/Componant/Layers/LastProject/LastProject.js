@@ -31,12 +31,25 @@ export default function LastProject () {
             stagger: 0.3,
             scale: 1.5
         })
+        gsap.to(".Last_circle", {
+            scrollTrigger: {
+                trigger: ".Last_project",
+          start: "-50%  50%",
+          end: "60% 50%",
+          toggleActions: "restart none none reverse",
+          scrub: 0.8
+            },
+            scale: 22,
+            background: "#a5167f57"
+        })
 
 
     })
 
     return (
         <section className="Last_project">
+            <div className="Last_circle" style={{background: "#F2F2F2", width: "80px", height: "80px"}}></div>
+            <div className="Last_circle"></div>
             <div className="Last_project_name">
                 <h3> Nos derniers projets</h3>
                 <p>Retrouver l'étude de nos derniers projets </p>

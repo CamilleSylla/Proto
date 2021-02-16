@@ -13,3 +13,32 @@ font-size: 4vw;
     color: "#F2F2F2";
     text-decoration: none;
 }
+
+
+.button_border {
+    width: 150px;
+    height: 50px;
+    font-weight: 700;
+    background: transparent;
+    border-radius: 10px;
+    border: 2px solid #a5167e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #a5167e;
+}
+.button_plain {
+    width: 150px;
+    height: 50px;
+    font-weight: 700;
+    background: #a5167e;
+    border: 2px solid #121525;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #121525;
+    
+}

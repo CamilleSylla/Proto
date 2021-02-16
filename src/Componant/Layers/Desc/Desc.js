@@ -18,7 +18,8 @@ export default function Desc() {
           toggleActions: "restart none none reverse"
         },
         duration: .4,
-        scale: 0,
+        scale: 3,
+        opacity: 0,
         stagger: 0.3
       })
       gsap.from(".desc_left, .desc_right", {
@@ -33,6 +34,7 @@ export default function Desc() {
         stagger: 0.3,
         y : 100
       })
+      
 
   });
 

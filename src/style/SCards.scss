@@ -6,8 +6,30 @@
     flex-wrap: wrap;
     .scard {
         width: 20%;
-        height: 25vw;
-        border: 2px solid #a5167e;
+        height: 75%;
+        // border: 2px solid #a5167e;
         margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        img {
+            width: 25%;
+        }
+        .scards_text_wrapper {
+            
+            width: 85%;
+            background: linear-gradient(45deg, rgba(18,21,37,1) 0%, rgba(165,22,126,1) 100%);
+            box-shadow: 0 0 20px #a5167f;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            border-radius: 15px;
+            height: 50%;
+            p {
+                width: 90%;
+            }
+        }
     }
 }

@@ -5,10 +5,20 @@
     justify-content: space-evenly;
     align-items: center;
     position: relative;
+    overflow: hidden;
+    .Last_circle {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: #a5167f;
+        z-index: 0;
+    }
     .Last_project_item {
         width: 20%;
         background-color: #121525;
         position: relative;
+        z-index: 1;
         img {
             width: 100%;
         }

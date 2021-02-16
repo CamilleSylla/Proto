@@ -1,12 +1,20 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import Regle from "../../../assets/Img/regle.webp";
 import Design from "../../../assets/Img/design.webp";
 import Scene from "../../Elements/Scene/Scene";
 import Logo from "../../../assets/Logos/IDLine.svg";
 import gsap from "gsap/gsap-core";
 import { ScrollTrigger } from "gsap/all";
+import { Link } from "react-router-dom";
+import { TransitionContext } from "../../../Context/TransitionContext";
 
 export default function HeroBanner() {
+  const [transition, setTransition] = useContext(TransitionContext)
+
+  function SetTransition () {
+    setTransition(!transition)
+  }
+
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -33,6 +41,14 @@ export default function HeroBanner() {
                 Marquez internet
                 <br /> de votre empreinte
               </h1>
+              <div className="hero_button">
+                    <Link onClick={SetTransition} className="button_border" to="/services">
+                      Services
+                    </Link>
+                    <Link onClick={SetTransition} className="button_plain" to="/contact">
+                      Consultation
+                    </Link>
+              </div>
             </div>
           </section>
           <Scene />
