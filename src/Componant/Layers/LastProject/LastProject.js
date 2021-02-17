@@ -40,7 +40,7 @@ export default function LastProject () {
           scrub: 0.8
             },
             scale: 22,
-            background: "#a5167f57"
+            // background: "#a5167f57"
         })
 
 
@@ -48,7 +48,7 @@ export default function LastProject () {
 
     return (
         <section className="Last_project">
-            <div className="Last_circle" style={{background: "#F2F2F2", width: "80px", height: "80px"}}></div>
+            <div className="Last_circle" style={{background: "#a5167f57", width: "80px", height: "80px"}}></div>
             <div className="Last_circle"></div>
             <div className="Last_project_name">
                 <h3> Nos derniers projets</h3>

@@ -13,7 +13,7 @@ export default function GameBoy() {
       0.1,
       1000
     );
-    camera.position.set(0, 1, 2);
+    camera.position.set(0.5, 1, 2);
     const renderer = new THREE.WebGLRenderer({ alpha: true });
     renderer.setSize(el.clientWidth, el.clientHeight);
     renderer.setClearColor(0x000000, 0);
@@ -35,7 +35,7 @@ export default function GameBoy() {
     const Man = new GLTFLoader();
     Man.load("/Hi/scene.gltf", (gltf) => {
       gltf.scene.scale.setScalar(2);
-      gltf.scene.position.set(0, -3, 0);
+      gltf.scene.position.set(0, -2.8, 0);
       gltf.scene.rotation.y = -1.5;
       gltf.scene.traverse((n) => {
         if (n.isMesh) {

@@ -7,7 +7,7 @@ export default function Avis () {
     return (
         <section className="avis">
             <article className="avis_content">
-                <div className="avis_title">
+                <div className="section_title">
                     <h3>Ils nous ont recommander</h3>
                 </div>
                 <div className="avis_items_container">

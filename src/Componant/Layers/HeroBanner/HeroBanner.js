@@ -26,7 +26,19 @@ export default function HeroBanner() {
         // toggleActions: "none restart none reset",
       },
       scale: 0,
-      opacity: 0
+      opacity: 0,
+      x: 300
+    });
+    gsap.to(".hero_cards, .hero_main_title", {
+      scrollTrigger: {
+        trigger: ".hero_banner",
+        start: "+=35% +=30% ",
+        end: "50%",
+        scrub: 0.3,
+        // toggleActions: "none restart none reset",
+      },
+      opacity: 0,
+      y: 100,
     });
   });
 
