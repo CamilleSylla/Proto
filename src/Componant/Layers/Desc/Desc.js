@@ -44,11 +44,9 @@ export default function Desc() {
         <article className="desc_grid">
           <div className="desc_left">
             <div className="desc_cont">
-              <h1>Conception de votre site web de A à Z</h1>
+            <h1>Spécialiste en developpement web</h1>
               <p>
-                Afin de vous demarquer le plus possible de vos concurents, nous
-                n'utilisons pas de thème dans la creation de votre porjet
-              </p>
+              La programmation est une passion chez Iconic Dev, nous saurons faire les bons choix des meilleurs technologies pour votre projet.              </p>
             </div>
           </div>
           <div className="desc_middle">
@@ -78,10 +76,9 @@ export default function Desc() {
           </div>
           <div className="desc_right">
             <div className="desc_cont">
-              <h1>Spécialiste en developpement web</h1>
+            <h1>Conception de votre site internet de A à Z</h1>
               <p>
-                Afin de vous demarquer le plus possible de vos concurents, nous
-                n'utilisons pas de thème dans la creation de votre porjet
+                Nous ne concevons que des sites internet sur mesure. Ce démarquer sur internet nécessite une identité spécifique a chaque projet 
               </p>
             </div>
           </div>
@@ -89,10 +86,9 @@ export default function Desc() {
         <article className="desc_grid">
           <div className="desc_left">
             <div className="desc_cont">
-              <h1>Un accompagnement complet et adapté</h1>
+              <h1>Adapté à vous et vos réels besoins</h1>
               <p>
-                Afin de vous demarquer le plus possible de vos concurents, nous
-                n'utilisons pas de thème dans la creation de votre porjet
+              Ici pas fonctionnalités superflues, votre site sera simple dans sa gestion et comportera ce qui lui est vraiment nécessaire pour un bon fonctionnement et de bonnes performances
               </p>
             </div>
           </div>

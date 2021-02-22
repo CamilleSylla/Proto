@@ -50,8 +50,11 @@ export default function PSM () {
             <div className="PSM_container">
                 <img className="PSM_Img" src={Build} alt="Buildiungs"/>
                 <article className="PSM_content">
-                    <h1> Pourquoi un site internet sur mesure</h1>
-                    <p> Some random text here Some random text here Some random text here Some random text here Some random text here Some random text here Some random text here Some random text here Some random text here Some random text here Some random text here</p>
+                    <div className="PSM_content_wrapper">
+                        
+                    <h1 className="secondary_title"> Pourquoi un site internet sur-mesure ?</h1>
+                    <p> Que votre site internet est un but lucratif ou simplement une vitrine, c'est l'occasion de partager avec vos utilisateurs vos valeurs mais surtout de mettre en avant votre identité visuelle en offrant à vos ceux-ci une meilleure expérience et une interface design et moderne.</p>
+                    </div>
                 </article>
             </div>
         </section>

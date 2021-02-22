@@ -70,16 +70,16 @@ export default function HeroBanner() {
         <article className="hero_cards">
           <img src={Regle} alt="Règle" />
           <div className="hero_cards_content">
-            <h1>Sur_Mesure</h1>
-            <p>Vos valeurs sur un ecran vos valeurs sur un ecran</p>
+            <h1>Le vrai sur mesure</h1>
+            <p>Retrancriver vos valeurs différement de vos concurent !</p>
             <p>Vos valeurs sur un ecran </p>
           </div>
         </article>
         <article className="hero_cards">
           <img src={Design} alt="Règle" />
           <div className="hero_cards_content">
-            <h1>Design</h1>
-            <p>Vos valeurs sur un ecran vos valeurs sur un ecran</p>
+            <h1>Sites internet modernes et design </h1>
+            <p>Donnez à vos utilisateurs une expérience digne de ce nom</p>
             <p>Vos valeurs sur un ecran </p>
           </div>
         </article>
