@@ -9,13 +9,9 @@ import Contact from "./Componant/Pages/Contact";
 import Transition from "./Componant/Transition/Transition";
 import { TransitionProvider } from "./Context/TransitionContext";
 import Atelier from "./Componant/Pages/Atelier";
-import gsap from "gsap/gsap-core";
-import { ScrollTrigger } from "gsap/all";
 
 function App() {
   const location = useLocation;
-  gsap.registerPlugin(ScrollTrigger);
-  gsap.core.globals("scrollTrigger", ScrollTrigger)
   return (
     <div className="App">
       <TransitionProvider>

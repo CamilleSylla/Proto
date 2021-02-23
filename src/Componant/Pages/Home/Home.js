@@ -1,5 +1,6 @@
 
-import gsap from "gsap/gsap-core";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import React, { useEffect } from "react";
 import "../../../style/Home.scss";
 import Avis from "../../Layers/Avis/Avis";
@@ -10,7 +11,7 @@ import PSM from "../../Layers/PSM/PSM";
 
 export default function Home() {
   useEffect(() => {
-    
+    gsap.registerPlugin(ScrollTrigger)
     gsap.from(".PSM_Img", {
       scrollTrigger: { 
           trigger: ".PSM",
@@ -127,7 +128,7 @@ gsap.to(".Last_circle", {
     scale: 22,
     // background: "#a5167f57"
 })
-  });
+  }, []);
 
   return (
     <div className="home">
