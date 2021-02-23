@@ -1,32 +1,10 @@
-import { random } from 'gsap/all'
-import { ScrollTrigger } from 'gsap/all'
-import gsap from 'gsap/gsap-core'
 import React, { useEffect } from 'react'
 import Build from '../../../assets/Img/PSM.webp'
 import '../../../style/PSM.scss'
 
 export default function PSM () {
     
-    useEffect(() => {
-        gsap.registerPlugin(ScrollTrigger)
-
-        gsap.from(".rolling_txt_right", {
-            scrollTrigger: {
-                trigger: '.PSM',
-                start: "-75% top",
-                scrub: 0.3
-            },
-            x: -1000
-        })
-        gsap.from(".rolling_txt_left", {
-            scrollTrigger: {
-                trigger: '.PSM',
-                start: "-75% top",
-                scrub: 0.3
-            },
-            x: 1000
-        })
-    })
+    
     const Words = ["iconicdev ","front-end ","developpement ","webdesign ","internet ","sur-mesure ", "web", "digital", "responsive", "seo"]
     
     function RandomWords () {

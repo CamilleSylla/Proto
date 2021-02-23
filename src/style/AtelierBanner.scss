@@ -1,0 +1,50 @@
+.atelier_banner {
+    width: 94%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    .atelier_title {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        .ul_scroll  {
+            width: 100%;
+            height: 50%;
+            max-height: 50%;
+            overflow-y: auto;
+            li {
+                margin-top: 25px;
+                display: flex;
+                height: 30%;
+                width: 100%;
+                padding-bottom: 15px;
+                border-bottom: 2px solid #121525;
+                img {
+                    width: 40%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                .atelier_list {
+                    width: 60%;
+                    h3 {
+                        margin-left: 25px;
+                        margin-right: 25px;
+                    }
+                    p {
+                        margin-left: 25px;
+                        margin-right: 25px;
+                    }
+                }
+            }
+        }
+        
+    }
+    .helmet {
+        width: 50%;
+        height: 100vh;
+    }
+}
+

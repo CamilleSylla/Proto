@@ -3,8 +3,6 @@ import Regle from "../../../assets/Img/regle.webp";
 import Design from "../../../assets/Img/design.webp";
 import Scene from "../../Elements/Scene/Scene";
 import Logo from "../../../assets/Logos/IDLine.svg";
-import gsap from "gsap/gsap-core";
-import { ScrollTrigger } from "gsap/all";
 import { Link } from "react-router-dom";
 import { TransitionContext } from "../../../Context/TransitionContext";
 
@@ -15,32 +13,6 @@ export default function HeroBanner() {
     setTransition(!transition)
   }
 
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-
-    gsap.to(".scene_container", {
-      scrollTrigger: {
-        trigger: ".hero_banner",
-        start: "+=35% +=30% ",
-        scrub: 0.3,
-        // toggleActions: "none restart none reset",
-      },
-      scale: 0,
-      opacity: 0,
-      x: 300
-    });
-    gsap.to(".hero_cards, .hero_main_title", {
-      scrollTrigger: {
-        trigger: ".hero_banner",
-        start: "+=35% +=30% ",
-        end: "50%",
-        scrub: 0.3,
-        // toggleActions: "none restart none reset",
-      },
-      opacity: 0,
-      y: 100,
-    });
-  });
 
   return (
     <section className="hero_banner">

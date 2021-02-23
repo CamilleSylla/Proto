@@ -4,39 +4,9 @@ import AZ from "../../../assets/Icon/AZ.svg";
 import Dev from "../../../assets/Icon/Dev.svg";
 import Acc from "../../../assets/Icon/Accomp.svg";
 import "../../../style/Desc.scss";
-import { ScrollTrigger } from "gsap/all";
-import gsap from "gsap/gsap-core";
 
 export default function Desc() {
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    
-      gsap.from(".desc_middle", {
-        scrollTrigger: {
-          trigger: ".desc",
-          start: "-35%  50%",
-          toggleActions: "restart none none reverse"
-        },
-        duration: .4,
-        scale: 3,
-        opacity: 0,
-        stagger: 0.3
-      })
-      gsap.from(".desc_left, .desc_right", {
-        scrollTrigger: {
-          trigger: ".desc",
-          start: "-25%  50%",
-          toggleActions: "restart none none reverse"
-        },
-        delay: 2,
-        duration: .2,
-        opacity: 0,
-        stagger: 0.3,
-        y : 100
-      })
-      
-
-  });
+  
 
   return (
     <section className="desc">

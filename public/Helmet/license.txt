@@ -1,0 +1,11 @@
+Model Information:
+* title:	Pilot's Helmet
+* source:	https://sketchfab.com/3d-models/pilots-helmet-e56c715f81564b1ba5455c7b914b1349
+* author:	Nikolai.Simonov (https://sketchfab.com/Nikolai.Simonov)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Pilot's Helmet" (https://sketchfab.com/3d-models/pilots-helmet-e56c715f81564b1ba5455c7b914b1349) by Nikolai.Simonov (https://sketchfab.com/Nikolai.Simonov) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

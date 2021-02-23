@@ -112,15 +112,15 @@ export default function TestMenu() {
             <li>
               <NavLink
               className="nav_link"
-                to="/lab"
+                to="/atelier"
                 activeStyle={{
                   fontWeight: "bold",
-                  color: "#F2F2F2",
+                  color: "#a5167e",
                   textDecoration: "none"
-                  
                 }}
+                onClick={ShowMenu}
               >
-                Le LAB
+                L'atelier
               </NavLink>
             </li>
             <li>

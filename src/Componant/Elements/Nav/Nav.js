@@ -1,4 +1,4 @@
-import React, { useEffect, useState, Fragment } from "react";
+import React from "react";
 import "../../../style/Nav.scss";
 import Insta from "../../../assets/Icon/insta.svg";
 import Git from "../../../assets/Icon/github.svg";

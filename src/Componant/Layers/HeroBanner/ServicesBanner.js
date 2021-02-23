@@ -1,30 +1,8 @@
-import { ScrollTrigger } from 'gsap/all';
-import gsap from 'gsap/gsap-core';
+
 import React, { useEffect } from 'react'
 
 export default function ServicesBanner () {
-    useEffect(() => {
-        gsap.registerPlugin(ScrollTrigger)
-
-        gsap.to(".services_banner_article", {
-            scrollTrigger: {
-                trigger: ".services_banner",
-                start: "20% 10%",
-                scrub: 0.3
-            },
-            y : 50,
-            opacity: 0
-        })
-        gsap.to(".services_banner_img", {
-            scrollTrigger: {
-                trigger: ".services_banner",
-                start: "20% 10%",
-                scrub: 0.3
-            },
-            y : -200,
-            opacity: 0,
-        })
-    })
+    
 
     return (
         <section className="services_banner">
