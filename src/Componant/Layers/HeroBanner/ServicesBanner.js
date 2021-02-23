@@ -2,7 +2,6 @@
 import React, { useEffect } from 'react'
 
 export default function ServicesBanner () {
-    
 
     return (
         <section className="services_banner">

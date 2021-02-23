@@ -4,9 +4,35 @@ import Hi from "../../Elements/Scene/Hi";
 import Etude from "../../../assets/Icon/Etude.svg";
 import Production from "../../../assets/Icon/Production.svg";
 import Project from "../../../assets/Icon/ProjectDev.svg";
+import gsap from "gsap/gsap-core";
+import { ScrollTrigger } from "gsap/all";
 
 export default function WhyUs() {
-  
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from(".motion", {
+      scrollTrigger: {
+        trigger: ".whyus",
+        start: "-10% top",
+        toggleActions: "restart none none reverse",
+      },
+      x: -100,
+      opacity: 0,
+      stagger: 0.1,
+    });
+    gsap.from(".Hi, .scene_circle", {
+      scrollTrigger: {
+        trigger: ".whyus",
+        start: "-10% 80%",
+        end: "10%",
+        toggleActions: "restart none none reverse",
+        scrub: 0.3
+      },
+      scale: 0,
+      stagger: 0.3
+    });
+  });
 
   return (
     <section className="whyus">

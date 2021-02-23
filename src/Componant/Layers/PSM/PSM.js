@@ -1,9 +1,9 @@
+
 import React, { useEffect } from 'react'
 import Build from '../../../assets/Img/PSM.webp'
 import '../../../style/PSM.scss'
 
 export default function PSM () {
-    
     
     const Words = ["iconicdev ","front-end ","developpement ","webdesign ","internet ","sur-mesure ", "web", "digital", "responsive", "seo"]
     

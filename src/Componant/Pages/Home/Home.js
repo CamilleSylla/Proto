@@ -1,4 +1,4 @@
-import { ScrollTrigger } from "gsap/all";
+
 import gsap from "gsap/gsap-core";
 import React, { useEffect } from "react";
 import "../../../style/Home.scss";
@@ -10,7 +10,7 @@ import PSM from "../../Layers/PSM/PSM";
 
 export default function Home() {
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+    
     gsap.from(".PSM_Img", {
       scrollTrigger: { 
           trigger: ".PSM",
