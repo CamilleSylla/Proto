@@ -2,6 +2,7 @@ import React from 'react'
 import '../../style/AtelierBanner.scss'
 import Helmet from '../Elements/Scene/Helmet'
 import IMG from '../../assets/Img/PSM.webp'
+import Scene from '../Elements/Scene/Scene'
 
 export default function AtelierBanner () {
 
@@ -41,7 +42,8 @@ export default function AtelierBanner () {
                 </li>
             </ul>
             </article>
-            <Helmet/>
+            {/* <Helmet/> */}
+            <Scene layerModel={"Helmet"}/>
         </section>
     )
 }

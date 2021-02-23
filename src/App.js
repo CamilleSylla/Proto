@@ -17,7 +17,7 @@ function App() {
       <TransitionProvider>
         <TestMenu />
         <Nav />
-        <Transition />
+        {/* <Transition /> */}
         <Route
           render={({ location }) => (
             <Switch location={location} key={location.pathname}>

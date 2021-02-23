@@ -69,8 +69,8 @@ scene.add( light );
 //Mouse
 const mouse = {x: 0.5, y: 0.5}
 window.addEventListener('mousemove', (event) => {
-    mouse.x =  (event.clientX  / (window.innerHeight / 2)) / 2
-    mouse.y =  (event.clientY  / window.innerWidth ) * 0.75
+    mouse.x =  (event.clientX  / (window.innerHeight / 4)) / 4
+    mouse.y =  (event.clientY  - (window.innerWidth / 4) ) / 1000
 })
     function upDate(){
         scene.rotation.y = mouse.x

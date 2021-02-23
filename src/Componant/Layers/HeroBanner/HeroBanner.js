@@ -9,9 +9,9 @@ import { TransitionContext } from "../../../Context/TransitionContext";
 export default function HeroBanner() {
   const [transition, setTransition] = useContext(TransitionContext)
 
-  function SetTransition () {
-    setTransition(!transition)
-  }
+  // function SetTransition () {
+  //   setTransition(!transition)
+  // }
 
 
   return (
@@ -26,16 +26,18 @@ export default function HeroBanner() {
                 <br /> de votre empreinte
               </h1>
               <div className="hero_button">
-                    <Link onClick={SetTransition} className="button_border" to="/services">
+                    <Link  className="button_border" to="/services">
+                    {/* onClick={SetTransition} */}
                       Services
                     </Link>
-                    <Link onClick={SetTransition} className="button_plain" to="/contact">
+                    <Link  className="button_plain" to="/contact">
+                    {/* onClick={SetTransition} */}
                       Consultation
                     </Link>
               </div>
             </div>
           </section>
-          <Scene />
+          <Scene layerModel={"AstoBoy"}/>
         </div>
       </article>
       <div className="hero_cards_container">
