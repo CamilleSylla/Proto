@@ -1,4 +1,4 @@
-import { ScrollTrigger } from 'gsap/all'
+
 import gsap from 'gsap/gsap-core'
 import React, { useEffect } from 'react'
 import '../../../style/Services.scss'
@@ -10,7 +10,6 @@ import Offers from '../../Offers/Offers'
 export default function Services () {
 
     useEffect(() => {
-        gsap.registerPlugin(ScrollTrigger)
         gsap.to(".services_banner_article", {
             scrollTrigger: {
                 trigger: ".services_banner",
