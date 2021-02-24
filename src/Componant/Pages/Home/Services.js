@@ -11,6 +11,7 @@ import Offers from '../../Offers/Offers'
 export default function Services () {
 
     useEffect(() => {
+      
         gsap.registerPlugin(ScrollTrigger)
         gsap.to(".services_banner_article", {
             scrollTrigger: {
@@ -58,7 +59,7 @@ export default function Services () {
               toggleActions: "restart none none reverse",
               scrub: 0.3
             },
-            scale: 0,
+            opacity: 0,
             stagger: 0.3
           });
     })

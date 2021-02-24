@@ -32,7 +32,7 @@ export default function Helmet () {
     const Man = new GLTFLoader();
     Man.load("/Helmet/scene.gltf", (gltf) => {
       gltf.scene.scale.setScalar(0.15);
-      gltf.scene.rotation.y = -0.8
+      
       LeMan = gltf.scene;
       gltf.scene.traverse((n) => {
         if (n.isMesh) {
@@ -73,8 +73,7 @@ window.addEventListener('mousemove', (event) => {
     mouse.y =  (event.clientY  - (window.innerWidth / 4) ) / 1000
 })
     function upDate(){
-        scene.rotation.y = mouse.x
-        scene.rotation.x = mouse.y
+        
      }
       
        function render () {
@@ -88,7 +87,7 @@ window.addEventListener('mousemove', (event) => {
            //run all the stuf (update, render, repeat)
            
           //  camera.rotation.z = mouse.y
-           requestAnimationFrame(Loop)
+           window.requestAnimationFrame(Loop)
            upDate()
            render()
        }

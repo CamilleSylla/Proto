@@ -8,8 +8,7 @@ export default function LastProject () {
 
     return (
         <section className="Last_project">
-            <div className="Last_circle" style={{background: "#a5167f57", width: "80px", height: "80px"}}></div>
-            <div className="Last_circle"></div>
+            
             <div className="Last_project_name">
                 <h3 className="secondary_title"> Nos derniers projets</h3>
                 <p>Bientot, retrouver l'étude de nos derniers projets...<br/> Pour le moment consultez les resultats !  </p>

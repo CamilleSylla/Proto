@@ -1,11 +1,27 @@
 import React, { useEffect } from "react";
 import "../../../style/WhyUs.scss";
-import Hi from "../../Elements/Scene/Hi";
 import Etude from "../../../assets/Icon/Etude.svg";
 import Production from "../../../assets/Icon/Production.svg";
 import Project from "../../../assets/Icon/ProjectDev.svg";
+import Scene from "../../Elements/Scene/Scene";
 
 export default function WhyUs() {
+  useEffect (() => {
+    const Labels = document.querySelector('.Hi')
+
+    Labels.addEventListener('mouseenter', e => {
+      document.getElementById("cliqueIci").style.opacity = "0";
+      setTimeout(() => {
+        document.getElementById("cliqueIci").style.display = "none";
+      }, 300);
+    })
+    Labels.addEventListener('mouseleave', e => {
+      document.getElementById("cliqueIci").style.display = "block";
+      setTimeout(() => {
+        document.getElementById("cliqueIci").style.opacity = "1";
+      }, 150);
+    })
+  })
 
   return (
     <section className="whyus">
@@ -32,7 +48,14 @@ export default function WhyUs() {
         </article>
         <div className="scene_wrapper">
           <div className="scene_circle"></div>
-          <Hi />
+          <div className="Hi">
+          <p id="cliqueIci">
+        Clique Gauche : modifier l'orientation <br/>
+        Clique Gauche : modifier la position <br/>
+        Molette : modifier le zoom <br/>
+        
+        </p>
+          </div>
         </div>
       </section>
     </section>

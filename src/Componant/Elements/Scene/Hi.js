@@ -90,31 +90,13 @@ export default function GameBoy() {
     }
     Loop();
 
-    const Labels = document.querySelector('.Hi')
-
-    Labels.addEventListener('mouseenter', e => {
-      document.getElementById("cliqueIci").style.opacity = "0";
-      setTimeout(() => {
-        document.getElementById("cliqueIci").style.display = "none";
-      }, 300);
-    })
-    Labels.addEventListener('mouseleave', e => {
-      document.getElementById("cliqueIci").style.display = "block";
-      setTimeout(() => {
-        document.getElementById("cliqueIci").style.opacity = "1";
-      }, 150);
-    })
+    
   });
 
   
   return (
     <div className="Hi" >
-      <p id="cliqueIci">
-        Clique Gauche : modifier l'orientation <br/>
-        Clique Gauche : modifier la position <br/>
-        Molette : modifier le zoom <br/>
-        
-        </p>
+      
     </div>
   );
 }

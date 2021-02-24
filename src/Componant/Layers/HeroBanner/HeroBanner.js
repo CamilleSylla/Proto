@@ -1,7 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import Regle from "../../../assets/Img/regle.webp";
 import Design from "../../../assets/Img/design.webp";
-import Scene from "../../Elements/Scene/Scene";
 import Logo from "../../../assets/Logos/IDLine.svg";
 import { Link } from "react-router-dom";
 import { TransitionContext } from "../../../Context/TransitionContext";
@@ -37,7 +36,9 @@ export default function HeroBanner() {
               </div>
             </div>
           </section>
-          <Scene layerModel={"AstoBoy"}/>
+          <div className="scene_container">
+
+          </div>
         </div>
       </article>
       <div className="hero_cards_container">

@@ -42,9 +42,8 @@ export default function Home() {
         scrub: 0.3,
         // toggleActions: "none restart none reset",
       },
-      scale: 0,
       opacity: 0,
-      x: 300
+      y: -500
     });
     gsap.to(".hero_cards, .hero_main_title", {
       scrollTrigger: {
@@ -117,17 +116,7 @@ gsap.from(".Last_project_name", {
     stagger: 0.3,
     scale: 1.5
 })
-gsap.to(".Last_circle", {
-    scrollTrigger: {
-        trigger: ".Last_project",
-  start: "-50%  50%",
-  end: "60% 50%",
-  toggleActions: "restart none none reverse",
-  scrub: 0.8
-    },
-    scale: 22,
-    // background: "#a5167f57"
-})
+
   }, []);
 
   return (
