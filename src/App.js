@@ -10,6 +10,7 @@ import Transition from "./Componant/Transition/Transition";
 import { TransitionProvider } from "./Context/TransitionContext";
 import Atelier from "./Componant/Pages/Atelier";
 import Scene from "./Componant/Elements/Scene/Scene";
+import { Suspense } from "react";
 
 function App() {
   const location = useLocation;
@@ -36,7 +37,10 @@ function App() {
       <TransitionProvider>
         <TestMenu />
         <Nav />
+        <Suspense fallback={<div>COucou</div>}>
+
         {goodScene}
+        </Suspense>
         <Route
           render={({ location }) => (
             <Switch location={location} key={location.pathname}>

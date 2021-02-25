@@ -40,7 +40,7 @@ export default function Home() {
         trigger: ".hero_banner",
         start: "+=35% +=30% ",
         scrub: 0.3,
-        // toggleActions: "none restart none reset",
+        // toggleActions: "none restart none restart",
       },
       opacity: 0,
       y: -500
@@ -51,7 +51,7 @@ export default function Home() {
         start: "+=35% +=30% ",
         end: "50%",
         scrub: 0.3,
-        // toggleActions: "none restart none reset",
+        // toggleActions: "none restart none restart",
       },
       opacity: 0,
       y: 100,
@@ -114,7 +114,6 @@ gsap.from(".Last_project_name", {
     opacity: 0,
     y: -200,
     stagger: 0.3,
-    scale: 1.5
 })
 
   }, []);
