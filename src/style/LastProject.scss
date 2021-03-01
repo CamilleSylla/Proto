@@ -46,3 +46,28 @@
         justify-content: center;
     }
 }
+
+@media only screen and (max-width: 900px) {
+
+    .Last_project {
+        flex-direction: column;
+        text-align: center;
+        .section_title {
+        }
+        .Last_project_item {
+            width: 40%;
+            img {
+            }
+            .hidded_text {
+            }
+            &:hover {
+                .hidded_text {
+                }
+            }
+        }
+        .Last_project_name {
+            height: auto;
+        }
+    }
+  
+}

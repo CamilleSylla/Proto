@@ -72,3 +72,44 @@
     transform: rotate(360deg);
   }
 }
+
+@media only screen and (max-width: 900px) {
+
+  .desc {
+    width: 100%;
+    .desc_container {
+      width: 100%;
+      .desc_grid {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: auto;
+        * {
+        }
+        .desc_left {
+          width: 100%;
+          img {
+            display: none;
+          }
+        }
+        .desc_right {
+          width: 100%;
+          img {
+            display: none;
+          }
+        }
+        .desc_middle {
+          width: 100%;
+          display: none;
+        }
+        .desc_cont {
+          margin-top: 50px;
+          h1 {
+            color: #a5167e;
+          }
+        }
+      }
+    }
+  }
+
+
+}

@@ -22,7 +22,7 @@ export default function HeroBanner() {
               <img src={Logo} alt="IconicDev" />
               <h1 className="page_title">
                 Marquez internet
-                <br /> de votre empreinte
+                de votre empreinte
               </h1>
               <div className="hero_button">
                     <Link  className="button_border" to="/services">
