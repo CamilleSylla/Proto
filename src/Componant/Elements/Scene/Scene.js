@@ -15,6 +15,7 @@ export default function Scene({ layerModel }) {
       scale: 0.15,
       class: "scene_container",
       loaded: null,
+      responsive: [0, 0, 1]
     },
     Helmet: {
       el: ".helmet",
@@ -23,6 +24,7 @@ export default function Scene({ layerModel }) {
       scale: 0.15,
       class: "helmet",
       loaded: null,
+      responsive: [0, 0, 1.5]
     },
     Avatar: {
       el: ".Hi",
@@ -31,6 +33,7 @@ export default function Scene({ layerModel }) {
       scale: 2,
       class: "Hi",
       loaded: null,
+      responsive: [0.5, 1, 5]
     }
   };
 
@@ -44,11 +47,22 @@ export default function Scene({ layerModel }) {
       0.1,
       1000
     );
-    camera.position.set(
-      Model_to_display[layerModel].camera_position_set[0],
-      Model_to_display[layerModel].camera_position_set[1],
-      Model_to_display[layerModel].camera_position_set[2]
-    );
+    if (window.innerWidth < 400 && window.innerHeight < 950) {
+
+      camera.position.set(
+        Model_to_display[layerModel].responsive[0],
+        Model_to_display[layerModel].responsive[1],
+        Model_to_display[layerModel].responsive[2]
+      );
+
+    } else {
+
+      camera.position.set(
+        Model_to_display[layerModel].camera_position_set[0],
+        Model_to_display[layerModel].camera_position_set[1],
+        Model_to_display[layerModel].camera_position_set[2]
+      );
+    }
     const renderer = new THREE.WebGLRenderer({ alpha: true });
     renderer.dispose()
     renderer.setSize(el.clientWidth, el.clientHeight);

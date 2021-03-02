@@ -3,12 +3,18 @@
     position: relative;
 }
 
+.para_title {
+    
+  }
+
 .page_title {
 font-size: 4vw;
 }
 
 .secondary_title {
+    text-align: left;
     font-size: 2vw;
+    color: #a5167e;
 }
 
 .nav_link {
@@ -53,4 +59,14 @@ font-size: 4vw;
     width: 90%;
     height: 10%;
     border-bottom: 2px solid #121525;
+}
+
+
+@media only screen and (max-width: 900px) {
+
+    .secondary_title {
+        text-align: left;
+        font-size: 2.5vh;
+        color: #a5167e;
+    }
 }
