@@ -38,7 +38,7 @@ function App() {
         <TestMenu />
         <Nav />
         <Suspense fallback={<div>COucou</div>}>
-
+        <Transition/>
         {goodScene}
         </Suspense>
         <Route
