@@ -113,50 +113,6 @@
 
 @media only screen and (max-width: 900px) {
   .nav {
-    height: 8vw;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: aqua;
-    z-index: 20;
-    .hamburger_container {
-      width: 6%;
-      height: 15%;
-      left: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: fixed;
-      z-index: 2;
-      // transform: translate3d(0, 100%, 0);
-      .hamburger {
-        background-color: blue;
-        .menuCircle {
-        }
-        #top_bar {
-        }
-        #middle_bar {
-        }
-        #bottom_bar {
-        }
-        .purple {
-        }
-        .blue {
-          
-        }
-        .active {
-        }
-        .bars {
-        }
-      }
-    }
-    .social {
     display: none;
-      .social_icon {
-        display: none;
-      }
-    }
   }
 }
