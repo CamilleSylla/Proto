@@ -64,7 +64,6 @@
 
 @media only screen and (max-width: 900px) {
   .whyus {
-    height: auto;
     .whyus_content {
       flex-direction: column;
       .scene_wrapper {
@@ -72,7 +71,7 @@
           background-color: transparent;
         }
         .Hi {
-          width: 100%;
+          display: none;
           p {
           }
         }

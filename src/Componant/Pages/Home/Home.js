@@ -27,7 +27,7 @@ export default function Home() {
       gsap.to(".scene_container", {
         scrollTrigger: {
           trigger: ".hero_banner",
-          start: "+=35% +=30% ",
+          start: "top top ",
           scrub: 0.3,
           // toggleActions: "none restart none restart",
         },
