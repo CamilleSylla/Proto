@@ -33,7 +33,7 @@ export default function Scene({ layerModel }) {
       scale: 2,
       class: "Hi",
       loaded: null,
-      responsive: [0.5, 1, 5]
+      responsive: [0.5, 1, 2]
     }
   };
 

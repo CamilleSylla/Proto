@@ -63,6 +63,27 @@
 }
 
 @media only screen and (max-width: 900px) {
-
-  
+  .whyus {
+    height: auto;
+    .whyus_content {
+      flex-direction: column;
+      .scene_wrapper {
+        .scene_circle {
+          background-color: transparent;
+        }
+        .Hi {
+          width: 100%;
+          p {
+          }
+        }
+      }
+      .whyus_articles {
+        width: 80%;
+        .whyus_articles_content {
+          img {
+          }
+        }
+      }
+    }
+  }
 }

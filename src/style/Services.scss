@@ -48,3 +48,26 @@
     }
   }
 }
+
+@media only screen and (max-width: 900px) {
+  .services {
+    width: 100%;
+    overflow: hidden;
+  .services_banner {
+    .services_banner_img {
+      width: 80%;
+      position: static;
+        .gameboy {
+        }
+    }
+    .services_banner_article {
+      width: 70%;
+      left: auto;
+        .services_title_wrapper {
+          .page_title {
+        }
+        }
+    }
+  }
+}
+}
